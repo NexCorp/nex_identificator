@@ -63,7 +63,7 @@ end)
 
 RegisterNetEvent('nexus:Id:SetIntegrityAsStaff')
 AddEventHandler('nexus:Id:SetIntegrityAsStaff', function()
-	print("[INTEGRIDAD] Acceso administrativo consedido.")
+	print("[Integrity] Administration auth success.")
 	isAdmin = true
 end)
 
@@ -153,7 +153,7 @@ Citizen.CreateThread(function()
                             if displayAdmin and isAdmin then
                                 if displayAdminExtra then
                                     local health = GetEntityHealth(targetPed)
-                                    DrawText3D(x2, y2, z2+2.1, 8,  "Salud: " .. health .. "/200 | (" .. player.job ..")" , 200,255,0)
+                                    DrawText3D(x2, y2, z2+2.1, 8,  "Health: " .. health .. "/200 | (" .. player.job ..")" , 200,255,0)
                                 end
                                 DrawText3D(x2, y2, z2+1.6, 8,  player.steam .. " [CharId: ".. player.charId .."]", 0,190,255)                            end
                             if NetworkIsPlayerTalking(playerServerID) then
@@ -166,7 +166,7 @@ Citizen.CreateThread(function()
                                 if displayAdmin and isAdmin then
                                     if displayAdminExtra then
                                         local health = GetEntityHealth(targetPed)
-                                        DrawText3D(x2, y2, z2+1.6, 2,  "Salud: " .. health .. "/200 | (" .. player.job ..")" , 200,255,0)
+                                        DrawText3D(x2, y2, z2+1.6, 2,  "Health: " .. health .. "/200 | (" .. player.job ..")" , 200,255,0)
                                     end
                                     DrawText3D(x2, y2, z2+1.5, 2,  player.steam .. " [CharId: ".. player.charId .."]", 0,190,255)
                                 end
