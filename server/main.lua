@@ -11,11 +11,11 @@ Citizen.CreateThread(function()
 
     NEX.RegisterCommand(Config.IdHeadDisplayAdminInfoCommand, 'admin', function(xPlayer, args, showError)
         TriggerEvent('nexus:Id:ToggleAdminInfo', xPlayer.source)
-    end, false, {help = 'Oculta la información de ID administrativa.', validate = true, arguments = {}})
+    end, false, {help = 'Hide administrative ID information.', validate = true, arguments = {}})
 
     NEX.RegisterCommand(Config.IdHeadDisplayAdminExtraInfoCommand, 'admin', function(xPlayer, args, showError)
         TriggerEvent('nexus:Id:ToggleAdminExtraInfo', xPlayer.source)
-    end, false, {help = 'Oculta la información extra de ID administrativa.', validate = true, arguments = {}})
+    end, false, {help = 'Hide extra administrative ID information.', validate = true, arguments = {}})
 
 	while true do
 		Citizen.Wait(Config.ServerSendSignalTimer * 1000)
