@@ -43,7 +43,7 @@ end
 
 RegisterNetEvent("nexus:Id:SetDatabaseIdentifier")
 AddEventHandler("nexus:Id:SetDatabaseIdentifier", function(data)
-    print("[INTEGRIDAD] Database ID: " .. data)
+    print("[INTEGRITY] Database ID: " .. data)
     myId = data
 end)
 
